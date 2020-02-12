@@ -19,7 +19,11 @@ namespace EMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(txtAge.Text) > 18)
+            if (txtAge.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Please enter Age");
+            }
+            else if (Convert.ToInt32(txtAge.Text) > 18)
             {
                 MessageBox.Show("Valid Age");
             }
