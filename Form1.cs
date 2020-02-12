@@ -27,6 +27,10 @@ namespace EMS
             {
                 MessageBox.Show("Valid Age");
             }
+            else if (Convert.ToInt32(txtAge.Text) == 18)
+            {
+                MessageBox.Show("Valid Age");
+            }
             else
             {
                 MessageBox.Show("Invalid Age");
