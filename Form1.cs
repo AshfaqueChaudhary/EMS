@@ -16,5 +16,17 @@ namespace EMS
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(txtAge.Text) > 18)
+            {
+                MessageBox.Show("Valid Age");
+            }
+            else
+            {
+                MessageBox.Show("Invalid Age");
+            }
+        }
     }
 }
