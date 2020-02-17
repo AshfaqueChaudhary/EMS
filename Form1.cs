@@ -18,6 +18,7 @@ namespace EMS
             InitializeComponent();
         }
 
+        int abc = 0;
         private void button1_Click(object sender, EventArgs e)
         {
             if (txtAge.Text.Trim().Length == 0)
@@ -34,7 +35,15 @@ namespace EMS
             }
             else
             {
-                MessageBox.Show("Invalid Age");
+                abc++;
+                if (abc >= 3)
+                {
+                    Application.Exit();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Age");
+                }
             }
         }
 
