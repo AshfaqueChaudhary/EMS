@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MyAdditionLib01;
 
 namespace EMS
 {
@@ -40,6 +41,13 @@ namespace EMS
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Hi");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MyAdditionLib myAdditionLib = new MyAdditionLib();
+            int result = myAdditionLib.Add(10, 15);
+            MessageBox.Show(result.ToString());
         }
     }
 }
